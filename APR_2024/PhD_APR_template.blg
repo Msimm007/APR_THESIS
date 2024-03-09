@@ -1,9 +1,13 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/CVE-2023-32700 patched)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: PhD_APR_template.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: chapter_1_introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
 A level-1 auxiliary file: chapter_2.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
 A level-1 auxiliary file: chapter_4.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
 A level-1 auxiliary file: chapter_conclusion.aux
 I found no \citation commands---while reading file PhD_APR_template.aux
 I found no \bibdata command---while reading file PhD_APR_template.aux
