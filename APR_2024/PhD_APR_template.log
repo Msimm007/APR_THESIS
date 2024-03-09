@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.19)  9 MAR 2024 10:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.19)  9 MAR 2024 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1168,7 +1168,7 @@ Chapter 2.
 
 
 ] [4]
-Overfull \hbox (6.15778pt too wide) in paragraph at lines 105--108
+Overfull \hbox (6.15778pt too wide) in paragraph at lines 107--110
 \OT1/cmr/m/n/10.95 This con-cludes the proof. $[][]\U/msa/m/n/10.95 ^^C$ \OT1/c
 mr/m/n/10.95 RE-MEM-BER TO ADD PUNC-TU-A-TION AND FOR-MAT MUTLILINE
  []
@@ -1226,16 +1226,16 @@ enddocument/afterlastpage: lastpage setting LastPage.
 (PhD_APR_template.aux (chapter_1_introduction.aux) (chapter_2.aux)
 (chapter_4.aux) (chapter_conclusion.aux))
 Package rerunfilecheck Info: File `PhD_APR_template.out' has not changed.
-(rerunfilecheck)             Checksum: 392E39E1A94A3127667B2ADCB7FFB19C;2088.
+(rerunfilecheck)             Checksum: 83ED8E40A3BB20420B4E3F57C8F39811;2228.
 Package logreq Info: Writing requests to 'PhD_APR_template.run.xml'.
 \openout1 = `PhD_APR_template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24143 strings out of 475285
- 420881 string characters out of 2774119
+ 24145 strings out of 475285
+ 420915 string characters out of 2774119
  1236502 words of memory out of 3000000
- 45007 multiletter control sequences out of 15000+600000
+ 45008 multiletter control sequences out of 15000+600000
  479611 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,21n,76p,1143b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1254,9 +1254,9 @@ y8.pfb><C:/Users/marks/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmti10.pfb><C:/Users/marks/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/symbols/msam10.pfb><C:/Users/marks/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on PhD_APR_template.pdf (17 pages, 196250 bytes).
+Output written on PhD_APR_template.pdf (17 pages, 197572 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 259 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
