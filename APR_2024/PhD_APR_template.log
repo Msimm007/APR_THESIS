@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.19)  9 MAR 2024 10:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.19)  9 MAR 2024 10:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1162,22 +1162,28 @@ Chapter 2.
 
 \openout4 = `PhD_APR_template.mtc'.
 
-(PhD_APR_template.mtc2)) [3
+(PhD_APR_template.mtc2) [3
 
 
 
 
-] (chapter_3.tex
+] [4]
+Overfull \hbox (6.15778pt too wide) in paragraph at lines 105--108
+\OT1/cmr/m/n/10.95 This con-cludes the proof. $[][]\U/msa/m/n/10.95 ^^C$ \OT1/c
+mr/m/n/10.95 RE-MEM-BER TO ADD PUNC-TU-A-TION AND FOR-MAT MUTLILINE
+ []
+
+) [5] (chapter_3.tex
 Chapter 3.
 \openout4 = `PhD_APR_template.mtc'.
 
 \openout4 = `PhD_APR_template.mtc'.
 
-(PhD_APR_template.mtc3) [4
+(PhD_APR_template.mtc3) [6
 
 
 
-] [5]) [6] [7]
+] [7]) [8] [9]
 \openout2 = `chapter_4.aux'.
 
 
@@ -1186,7 +1192,7 @@ No file chapter_4.tex.
 
 (chapter_conclusion.tex
 Chapter 4.
-) [8
+) [10
 
 
 
@@ -1211,7 +1217,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the PhD_APR_template.log file.
 
-[9
+[11
 
 
 
@@ -1226,28 +1232,31 @@ Package logreq Info: Writing requests to 'PhD_APR_template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24139 strings out of 475285
- 420843 string characters out of 2774119
- 1238495 words of memory out of 3000000
- 45006 multiletter control sequences out of 15000+600000
- 479265 words of font info for 66 fonts, out of 8000000 for 9000
+ 24143 strings out of 475285
+ 420881 string characters out of 2774119
+ 1236502 words of memory out of 3000000
+ 45007 multiletter control sequences out of 15000+600000
+ 479611 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,21n,76p,1143b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/marks/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/marks/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/marks/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Users/marks/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/marks/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/marks/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/marks/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/marks/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
-marks/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
-:/Users/marks/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb>
-Output written on PhD_APR_template.pdf (15 pages, 163072 bytes).
+ublic/amsfonts/cm/cmex10.pfb><C:/Users/marks/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/marks/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/marks/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/marks/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/marks/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/
+marks/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Users/marks/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><C:/Users/marks/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmti10.pfb><C:/Users/marks/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/symbols/msam10.pfb><C:/Users/marks/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on PhD_APR_template.pdf (17 pages, 196250 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
+ 252 PDF objects out of 1000 (max. 8388607)
+ 42 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

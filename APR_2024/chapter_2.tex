@@ -8,3 +8,101 @@
 	\section{Chapter 2-section 1}
 \label{sec:chapter_1_sec_1}
 
+
+We will be showing stability of the following numerical scheme
+\[
+\frac{S_{a}^{n+1}- S_{a}^{n}}{\Delta t} - 
+\nabla \cdot (\Tilde{K_a}\nabla(S_{a}^{n+1}-Sa^{n})) 
+- \nabla \cdot ( K_{a}^{n} \nabla S_{a}^{n}) = 0
+\]
+\textit{Proof:}
+Our first hypothesis is that $K_a^{n} \leq \Tilde{K}^{n}$.
+We multiply by  $2\Delta t S_{a}^{n+1}$ and we integrate over our domain. \
+We have
+\[
+2 \int S_{a}^{n+1}(S_{a}^{n+1} - S_{a}^{n}) - 
+2 \Delta t \int  \Tilde{K_{a}} S_{a}^{n+1} 
+\nabla \cdot(\nabla(S_{a}^{n+1}-S_{a}^{n}))
+- 2 \Delta t \int K_a^n S_a^{n+1} \nabla \cdot (\nabla S_a^n)= 0
+\]
+Integrating by parts:
+\[
+2 \int S_{a}^{n+1}(S_{a}^{n+1} - S_{a}^{n}) 
++ 2 \Delta t \Tilde{K} \int \nabla(S_{a}^{n+1} 
+- S_{a}^{n}) \nabla S_{a}^{n+1} + 2 \Delta t \int K_a^{n} 
+\nabla S_a^{n+1} \nabla S_a^{n} = 0         
+\]
+Using the polar identity, $2a(a-b) = a^2 - b^2 +(a-b)^2$, on the first integral:
+we have
+\[
+2 \int S_a^{n+1} (S_a^{n+1}-S_a^{n}) = 
+\int (S_a^{n+1})^2 - \int (S_a^{n})^2 + \int (S_a^{n+1} - S_a^{n+1})^2
+\]
+Doing the same for the second integral:
+\[
+2 \Delta t \Tilde{K} \int \nabla(S_{a}^{n+1} 
+- S_{a}^{n}) \nabla S_{a}^{n+1} =  \Delta t \Tilde{K}_a \int (\nabla S_a^{n+1})^2 -
+\Delta t \Tilde{K}_a \int (\nabla S_a^{n})^2 + \Delta t \Tilde{K}_a 
+\int (\nabla S_a^{n+1} - \nabla S_a^{n})^2
+\]
+Combining and Simplifying by using the definition of  $L_2$ norm, we have
+\[
+\| S_a^{n+1} \|^2-\| S_a^{n} \|^2 + \| S_a^{n+1} - S_a^{n} \|^2+
+\Delta t \Tilde{K}_a \|\nabla S_a^{n+1} \|^2-   \Delta t
+\Tilde{K}_a \| \nabla S_a^{n} \|^2 + \Delta t \Tilde{K} \|
+\nabla S_a^{n+1} - \nabla S_a^{n} \|^2
+\]
+\[
++ 2 \Delta t \int K_a^{n} \nabla S_a^{n+1} \nabla S_a^{n} = 0
+\]
+Isolating the last integral term and adding and subtracting $ S_a^{n+1}$, we
+have 
+\begin{align*}
+	2 \Delta t \int K_a^{n} \nabla S_a^{n+1} \nabla S_a^{n}  &= 2 \Delta t
+	\int K_a^{n} \nabla( S_a^n - \nabla S_a^{n+1} +\nabla S_a^{n+1}) \nabla
+	S_a^{n+1} \\
+	&=  -2 \Delta t \int K_a^n \nabla(S_a^{n+1} - S_a^n)\nabla
+	S_a^{n+1} + 2 \Delta t \int K_a^n (\nabla S_a^{n+1})^2
+\end{align*}
+using the polar identity again and using the definition of the $L^2$ norm, the
+last term we get is:
+\begin{align*}
+	2 \Delta t \int K_a^{n} \nabla S_a^{n+1} \nabla S_a^{n} &= \\
+	-2 \Delta t \int K_a^n \nabla(S_a^{n+1} - S_a^n)\nabla
+	S_a^{n+1} + 2 \Delta t \int K_a^n (\nabla S_a^{n+1})^2 &= \\-\Delta t \|
+	K_a^{n} \nabla S_a^{n+1} \|^2 + \Delta t \| K_a^n \nabla S_a^n \|^2 -
+	\Delta t \| K_a^n(\nabla S_a^{n+1} - \nabla S_a^n) \|^2 + 2 \Delta t \|
+	K_a^n \nabla S_a^{n+1} \|^2 &= \\ \Delta t \| K_a^n \nabla S_a^{n+1}
+	\|^2 + \Delta t \| K_a^n \nabla S_a^n \|^2 - \Delta t \| K_a(\nabla
+	S_a^{n+1} - \nabla S_a^n) \|^2
+\end{align*}
+Adding back into original,
+\[
+\| S_a^{n+1} \|^2-\| S_a^{n} \|^2 + \| S_a^{n+1} - S_a^{n} \|^2+
+\Delta t \Tilde{K}_a \|\nabla S_a^{n+1} \|^2-   \Delta t
+\Tilde{K}_a \| \nabla S_a^{n} \|^2 + \Delta t \Tilde{K} \|
+\nabla S_a^{n+1} - \nabla S_a^{n} \|^2
+\]
+\[
++ \Delta t \| K_a^n \nabla S_a^{n+1}
+\|^2 + \Delta t \| K_a^n \nabla S_a^n \|^2 - \Delta t \| K_a^n(\nabla
+S_a^{n+1} - \nabla S_a^n) \|^2 = 0
+\]
+since we assumed that $ K_a^n \leq \Tilde{K}_a$, we can say that 
+\[
+\Delta t \Tilde{K} \|
+\nabla S_a^{n+1} - \nabla S_a^{n} \|^2  - \Delta t \| K_a^n(\nabla
+S_a^{n+1} - \nabla S_a^n) \|^2 \geq 0
+\]
+Also we know that $ \| S_a^{n+1} - S_a^{n} \|^2 + \| K_a^n \nabla S_a^{n+1}
+\|^2 + \| K_a^n \nabla S_a^n \|^2  \geq 0$,
+
+Thus by rearanging terms,
+\[
+\| S_a^{n+1} \|^2 +\Delta t \Tilde{K}_a \|\nabla S_a^{n+1} \|^2 \leq
+\| S_a^{n} \|^2 +  \Delta t
+\Tilde{K}_a \| \nabla S_a^{n} \|^2 
+\]
+This concludes the proof. $\square$
+REMEMBER TO ADD PUNCTUATION AND FORMAT MUTLILINE BETTER
+
