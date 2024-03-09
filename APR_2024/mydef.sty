@@ -1,0 +1,220 @@
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\newtheorem*{acknowledgement*}{Acknowledgement}
+
+\def\berom{\begin{enumerate}[{\rm(i)}]}
+\def\eerom{\end{enumerate}}
+\def\bRem{\begin{Rem} \setcounter{itemrem}{0}}
+         \newcounter{itemrem}
+         \def\itemrem{\addtocounter{itemrem}{1} \ \\ \indent (\roman{itemrem}) }
+\def\eRem{\end{Rem}}
+
+
+%For questions/notes in the margin
+\newcommand{\Question}[1]{\marginpar{}}
+\renewcommand{\Question}[1]{%
+            \marginpar{\flushleft\scriptsize\bfseries\upshape#1}}
+% Makes \section reset 'equation' counter.
+\catcode`\@=11
+\@addtoreset{equation}{section}
+\renewcommand\theequation{\thesection.\arabic{equation}}
+
+%Operators
+\newcommand{\supess}{\mathop{\mbox{\rm ess~sup}}}
+\newcommand{\infess}{\mathop{\mbox{\rm ess~inf}}}
+\def\KER{\mathop{\text{\rm Ker}}\nolimits}
+\def\IM{\mathop{\text{\rm Im}}\nolimits}
+\newcommand{\nl}{\text{\sl nl}_h}
+\newcommand{\Dom}{D}
+\newcommand{\SCAL}{{\cdot}}
+\newcommand{\DIV}{\nabla\!{\cdot}}   %Divergence
+\newcommand{\ROT}{\nabla\!{\times}}  %Divergence
+\newcommand{\GRAD}{\nabla}           %Gradient
+\newcommand{\LAP}{{\Delta}}          %Laplacian
+\newcommand{\CROSS}{{\times}}     
+\newcommand{\LAPh}{{\Delta_h}}          %Laplacian
+\newcommand{\LAPINV}{{\Delta^{-1}}}          %Laplacian
+\newcommand{\ADV}{{\cdot}\nabla} %Advection
+\newcommand{\FILTER}[1]{\overline{#1}} %Filter
+\newcommand{\FILTERG}[1]{\overline{#1}} %{\calF(#1)} %Filter
+\newcommand{\FILTERF}[1]{\widetilde{#1}} % {\calG(#1)} %Filter
+\newcommand{\CONV}{\!*\!}            %Convolution
+\newcommand{\AV}[1]{\langle #1 \rangle} %Average
+\newcommand{\UNDER}[1]{\underline{#1}} %Underline
+\newcommand{\LIM}{\mathop{\textsc{Lim}}} %Underline
+\newcommand{\aatop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+\newcommand{\CIRC}[1]{\overset{\circ}{#1}}
+\newcommand{\CIRCD}{\text{\r{\bfseries D}}}
+\newcommand{\dx}{\partial_{x_1}}
+\newcommand{\dy}{\partial_{x_2}}
+\newcommand{\dz}{\partial_{x_3}}
+\newcommand{\dxx}{\partial_{x_1x_1}}
+\newcommand{\dyy}{\partial_{x_2x_2}}
+\newcommand{\dxy}{\partial_{x_1x_2}}
+\newcommand{\dyx}{\partial_{x_2x_1}}
+\newcommand{\dxz}{\partial_{x_1x_3}}
+\newcommand{\dyz}{\partial_{x_2x_3}}
+\newcommand{\dzy}{\partial_{x_3x_2}}
+\newcommand{\dzz}{\partial_{x_3x_3}}
+
+\def\Hundp{{   \bH^1_{\#}(\Omega)}}
+\def\Hunp{{   H^1_{\#}(\Omega)}}
+\def\dotLdeuxd{{\dot{\bf L}^2   (\Omega)}}
+\def\Ldeuxd{{{ \bf L}^2   (\Omega)}}
+\def\Ldeuxt{{{ \bf L}^2   (\Omega)}}
+\def\Ldeuxw{{{  L}^2_w   (\Omega)}}
+\def\dotLdeux{{\dot{L}^2   (\Omega)}}
+\def\Ldeux{{{  L}^2   (\Omega)}}
+\def\Hunzd{{{  \bf H}^1_0 (\Omega)}}
+\def\Hunzt{{{  \bf H}^1_0 (\Omega)}}
+\def\Hunz{{{   H}^1_0 (\Omega)}}
+\def\Hmun{{{   H}^{-1}(\Omega)}}
+\def\Hmund{{{  \bf H}^{-1}(\Omega)}}
+\def\Hmunt{{{  \bf H}^{-1}(\Omega)}}
+\def\Hund{{{   \bf H}^1   (\Omega)}}
+\def\Hs{{{   H}^s   (\Omega)}}
+\def\Hsz{{{  H}^s_0   (\Omega)}}
+\def\Hsd{{{   \bf H}^s   (\Omega)}}
+\def\Hszd{{{   \bf H}^s_0   (\Omega)}}
+\def\Hrzd{{{   \bf H}^r_0   (\Omega)}}
+\def\Hrd{{{   \bf H}^r   (\Omega)}}
+\def\Hsp1d{{{   \bf H}^{s+1}   (\Omega)}}
+\def\dotHund{{\dot{\bf H}^1   (\Omega)}}
+\def\Hun{{{    H}^{1}(\Omega)}}
+\def\Hdeuxd{{{   \bf H}^2   (\Omega)}}
+\def\tildeLdeux{{L^2_{\scriptscriptstyle\!\int\!=0} (\Omega)}}
+\def\tildeHun{{H^1_{\scriptscriptstyle\!\int\!=0} (\Omega)}}
+\def\tildeHs{{H^s_{\scriptscriptstyle\!\int\!=0} (\Omega)}}
+\def\tildeHss{{H^s_{\scriptscriptstyle\!\int\!=0}}}
+\def\Hdeux{{{   H}^2   (\Omega)}}
+\def\Hszdinter{[\Hunzd,\Ldeuxd]_s}
+\def\Hszinter{[\Hunz,\Ldeux]_s}
+\def\Hminussd{{{\bf H}^{-s}(\Omega)}}
+\def\Hminuss{{{H}^{-s}(\Omega)}}
+\def\Hodiv{ \bH_0^{ \text{div} } }
+
+\def\tH#1{\widetilde {\mathbf H}^{#1}_0}
+\def\tHz#1{\widetilde {\mathbf H}_0^{#1}(\Omega)}
+\def\tnH#1{\widetilde {H}^{#1}_0}
+\def\tnHz#1{\widetilde {H}_0^{#1}(\Omega)}
+
+
+
+%New characters
+\newcommand{\ts}[1]{{\textstyle #1}}
+\newcommand{\Real}{\mathbb R}
+\newcommand{\diff}{\, \mbox{\rm d}}
+\newcommand{\front}{\partial\Dom}
+\newcommand{\oH}{\dot{H}}
+\def\hpvc{\alpha}
+\def\LESpar{\gamma}
+\renewcommand{\b}[1]{\text{\boldmath $#1$}}
+
+\newcommand{\Ne}{{N_\varepsilon}}
+\newcommand{\vare}{{\varepsilon}}
+\newcommand{\varel}{{\varepsilon_l}}
+\newcommand{\hash}{{h}}
+\newcommand{\hashl}{{h_l}}
+
+\newcommand{\ie}{i.e.,\@\xspace}
+\newcommand{\eg}{e.g.\@\xspace}
+\newcommand{\cf}{cf.\@\xspace}
+\newcommand{\etal}{et al.\@\xspace}
+\newcommand{\etc}{etc.\@\xspace}
+\renewcommand{\ae}{a.e.\@\xspace}
+
+\newcommand{\tq}{{\ |\ }}
+\newcommand{\st}{{\ |\ }}
+\newcommand{\bset}{\{}
+\newcommand{\eset}{\}}
+\def\tr{^{\sf T}}
+
+\newcommand{\Pvare}{{P_{\!\varepsilon}}}
+\newcommand{\Qvare}{{Q_{\varepsilon}}}
+
+\newcommand{\dt}{\tau}
+
+
+%%Command An Vu
+\newcommand{\nbar}{\bar{\nu}}
+\newcommand{\kbar}{\bar{\kappa}}
+\newcommand{\ebar}{\bar{\eta}}
+\newcommand{\tn}{(t_n)}
+\newcommand{\tnp}{(t_{n+1})}
+\newcommand{\np}{{n+1}}
+\newcommand{\dive}{\nabla\!{\cdot}}
+%norms
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert_{L^2}^2}
+\newcommand{\normL}[1]{\left\lVert #1 \right\rVert_{L^2}}
+\newcommand{\normLinf}[1]{\left\lVert #1 \right\rVert_{L^{\infty}}}
+\newcommand{\normH}[2]{\left\lVert #1 \right\rVert_{H^{#2}}}
+\newcommand{\LL}{\left\langle}
+\newcommand{\RR}{\right\rangle}
+%variable
+\newcommand{\rn}{\rho^n}
+\newcommand{\en}{e^n}
+\newcommand{\es}{e^{*,n}}
+\newcommand{\Tn}{T^n}
+\newcommand{\etan}{\eta^n}
+\newcommand{\phin}{\phi^n}
+\newcommand{\un}{\bu^n}
+\newcommand{\utilde}{\Tilde{\bu}^{n+1}}
+\newcommand{\utn}{\Tilde{\bu}^n}
+\newcommand{\mn}{\textbf{m}^n}
+\newcommand{\pn}{p^n}
+\newcommand{\pmi}{p^{n-1}}
+\newcommand{\crho}{c_{\rho}}
+\newcommand{\ft}{f_T}
+\newcommand{\fu}{\textbf{f}_u}
+\newcommand{\Res}{\text{Res}}
+% variables for space
+\newcommand{\rhoh}{\rho_h}
+\newcommand{\eh}{e_h}
+\newcommand{\Th}{T_h}
+\newcommand{\etah}{\eta_h}
+\newcommand{\phih}{\phi_h}
+\newcommand{\uh}{\bu_h}
+\newcommand{\utnh}{\utn_h}
+\newcommand{\ph}{p_h}
+\newcommand{\pmih}{\pmi_h}
+\newcommand{\crh}{c_{\rho h}}
+\newcommand{\mh}{\bm_h}
+\newcommand{\kh}{\kappa_h}
+\newcommand{\veuh}[1]{\varepsilon\left(\euh^{#1}\right)}
+\newcommand{\Resh}{\text{Res}_h}
+%errors in time
+\newcommand{\er}{e_\rho}
+\newcommand{\eu}{\textbf{e}_u}
+\newcommand{\etu}{\Tilde{\textbf{e}}_u^n}
+\newcommand{\ep}{e_p}
+\newcommand{\vh}{\textbf{v}_h}
+\newcommand{\wh}{w_h}
+\newcommand{\rh}{r_h}
+%errors in space
+\newcommand{\euh}{\textbf{e}_{u,h}}
+\newcommand{\erh}{e_{\rho,h}}
+\newcommand{\eph}{e_{p,h}}
+\newcommand{\eTh}{e_{T,h}}
+\newcommand{\etuh}{\Tilde{\textbf{e}}_{u,h}^n}
+\newcommand{\Euh}{\textbf{E}_{u,h}}
+\newcommand{\Erh}{E_{\rho,h}}
+\newcommand{\Eph}{E_{p,h}}
+\newcommand{\ETh}{E_{T,h}}
+%projections
+\newcommand{\Rh}{\textbf{R}_h}
+\newcommand{\Qh}{Q_h}
+\newcommand{\Ph}{P_h}
+\newcommand{\Wh}{W_h}
+
+
+%% To define the Reynolds number
+\def\Reynolds{R_e}
+\def\Froude{F_r}
+\def\Weber{W_e}
+%% \st already used to define "such as" (often use for set definition)
+%%%\def\st{\textrm{st}} 
+\def\rf{\textrm{ref}}

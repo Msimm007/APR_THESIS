@@ -1,0 +1,154 @@
+%\documentclass[a4paper,11pt]{report}
+\documentclass[11pt, fullpage]{report}
+\newcommand{\refname}{Bibliography}
+\usepackage{uhthesis2019}
+% Dr. Mang
+\usepackage[backend=biber,sortcites,backref=true,style=numeric-comp,
+maxbibnames=9,minbibnames=5,sorting=nty]{biblatex}
+\addbibresource{biblio.bib}
+%\usepackage[small,labelfont=bf,textfont=it,up,
+%belowskip=-8pt,aboveskip=5pt]{caption}
+\usepackage{amsmath,amssymb,amsbsy,amsfonts,amsthm}
+\usepackage{algorithm,algorithmic}
+\usepackage{multicol,multirow}
+\usepackage{paralist}
+%\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{setspace}
+%\usepackage{siunitx}
+\usepackage[plainpages=false]{hyperref}
+%\usepackage[]{nohyperref}  % This makes hyperref commands do nothing without errors
+\usepackage{pdfpages}
+\usepackage{tabularx,booktabs,colortbl,xcolor}
+\usepackage{nicefrac}
+%\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfsync}
+% AV-LC
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mydef,boldfonts}
+\usepackage[english]{minitoc}
+\setcounter{minitocdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+
+  
+%%\hypersetup{
+%%    colorlinks=false,
+%%    pdfborder={0 0 0},
+%%}
+
+
+
+\newcommand{\bal}[1]{\textcolor{red}{[#1]}}
+\newcommand{\av}[1]{\textcolor{black}{#1}}
+
+
+%so subsubsubsection, ie paragrah are numbered for copy/paste article
+\setcounter{secnumdepth}{5}
+
+\begin{document}
+	\pagenumbering{roman}    
+    \title{Annual Performance Review 20XX: Title TBD}
+    \author{TBD} % The graduate student/author name
+    \department{Mathematics}
+    \degree{Doctor of Philosophy}{Dissertation}
+    \college{College of Natural Sciences and Mathematics}
+    \chair{Loic Cappanera}
+    \cochairfalse
+    \firstreader{TBD}
+    \secondreader{TBD}
+    \thirdreader{TBD}
+    \threereaderstrue
+    %\threereadersfakse
+%    \fourthreader{Committee Member4}
+    \fourreadersfalse
+%    \fifthreader{Committee Member5}
+    \fivereadersfalse
+    \figurelisttrue
+    \tablelisttrue % or switch to true later
+%\figurelistfalse
+%\tablelistfalse
+    
+    % Following command will create the title and copyright pages (not included in TOC)
+\copyrighttrue
+\makecoverpages
+
+%% Redefine \thebibliography to go to a new page and put an entry in the
+%% table of contents
+%\let\@ldthebibliography\thebibliography
+%\renewcommand{\thebibliography}[1]{
+%        \newpage
+%        \def\baselinestretch{1}\@normalsize
+%    \addcontentsline{toc}{section}{\uppercase{Bibliography}}
+%    \@ldthebibliography{#1}}
+
+
+%\clearpage
+%\thispagestyle{empty}
+%~
+%\clearpage
+
+\dominitoc % include mini table of contents in each chapter
+%\dominilot
+%\dominilof
+
+%\frontmatter
+
+%\begin{dedication} % optional section
+%       Quotes and or words of dedication
+%\end{dedication}
+%    
+%\begin{acknowledgements} % optional section
+%        I would like to thank...
+%\end{acknowledgements}
+
+%\begin{abstract} % Mandatory
+\abstract
+       Write abstract here.
+%\end{abstract}
+\endabstract
+
+    % Following command will create the content pages (with roman numbering) and lead to TOC...
+
+\makecontentspages
+
+
+\chapterpages   
+\pagenumbering{arabic}\newpage\setcounter{page}{1}
+\clearpage
+    
+
+\include{chapter_1_introduction} %chapter_1
+
+\include{chapter_2}
+
+\input{chapter_3}
+
+%\include{chapter_4}
+
+\include{chapter_conclusion}
+
+
+%%    \renewcommand{\refname}{Bibliographie}
+%\nocite{*}
+%\addcontentsline{toc}{chapter}{Bibliography}
+%\thebibliography
+%\bibliographystyle{plain}
+%\bibliography{biblio}
+
+%%%   \addcontentsline{toc}{chapter}{Bibliographie}
+
+% From Dr. Mang's main:
+%\clearpage
+%%\input appendix
+
+\clearpage\singlespacing
+\printbibliography[heading=bibintoc]
+
+
+\end{document}
